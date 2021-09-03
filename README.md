@@ -4,12 +4,15 @@
 
 ## ¿Que se debe hacer?
 
-Aplicar el proceso IDEAL completamente, es decir. 
+Aplicar el proceso IDEAL completamente, es decir.
+ 
 1. Identificar el problema
 2. Definir el problema c. Estrategias
 3. Algoritmos
 4. Logros
+
 Implementar la aplicación en Python
+
 1. Definiendo funciones con parámetros 
 2. Invocando funciones correctamente 
 3. Documentando el código
