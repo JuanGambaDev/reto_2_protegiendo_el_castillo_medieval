@@ -70,12 +70,12 @@ def calcular_tiempo():
 velocidad = calcular_tiempo()
 
 def imprimir_resultados():
-    #Se muestran resultados en pantalla
+    #resultados 
     print("El numero de vueltas necesarias en la polea para cerrar la puerta completamente es:",nro_vueltas)
     print("El numero de hombres necesarios para cerrar la puerta es:", nro_hombres)
     print("Para cerrar la puerta en el tiempo estipulado la polea debe girar a una velocidad de:",velocidad,"cm/s")
 
-#muestro los resultados en pantalla
+#llamo funcion para mostrar resultados
 imprimir_resultados()
 
 
