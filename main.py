@@ -75,7 +75,7 @@ def imprimir_resultados():
     print("El numero de hombres necesarios para cerrar la puerta es:", nro_hombres)
     print("Para cerrar la puerta en el tiempo estipulado la polea debe girar a una velocidad de:",velocidad,"cm/s")
 
-#llamo funcion para mostrar resultados
+#llamo funcion para mostra
 imprimir_resultados()
 
 
