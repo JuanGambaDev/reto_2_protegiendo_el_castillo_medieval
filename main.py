@@ -4,7 +4,6 @@ import math
     Juan Sebastian Gamba Jacomussi
     Mayo 3-2021 """
 
-
 print("+++La puerta del castillo+++")
 print("+++Calculadora+++")
 
