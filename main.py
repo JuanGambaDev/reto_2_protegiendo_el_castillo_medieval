@@ -1,3 +1,5 @@
+import math
+
 """ Reto 2 La puerta del castillo #
     Juan Sebastian Gamba Jacomussi
     Mayo 3-2021 """
@@ -6,11 +8,12 @@
 print("+++La puerta del castillo+++")
 print("+++Calculadora+++")
 
+#solicito datos por parte del usuario
 longitud_puerta = float(input("Escriba longitud de la puerta (Mts): "))
 diametro_polea = float(input("Escriba el diametro de la polea (cms): "))
 tiempo_cierre = float(input("Escriba el tiempo en el que desea cerrar la puerta (min.): "))
-
-import math
+    
+"""inician los calculos correspondientes"""
 
 def convertir_mtsacms():
   #Calcule la conversion de mts. a cms.
@@ -34,6 +37,7 @@ def calcular_perimetro_polea():
   perimetro = 2 * math.pi * r
   return perimetro
 
+#Guardo los retornos de los calculos y las funciones en variables
 lp = convertir_mtsacms()
 r = calcular_radio_polea()
 s = convertir_minaseg() 
@@ -44,6 +48,7 @@ def calcular_nro_vueltas():
   nv = lp / perimetro_polea
   return nv
 
+#Guardo los retornos de los calculos y las funciones en variables
 nro_vueltas = calcular_nro_vueltas() 
 
 #calcule el numero de hombres necesario
@@ -52,6 +57,7 @@ def calcular_nro_hombres():
   redondeado = math.ceil(nh) #Se redonde al numero para trabajar con numero exactos 
   return redondeado
 
+#Guardo los retornos de los calculos y las funciones en variables
 nro_hombres = calcular_nro_hombres()
 
 def calcular_tiempo():
@@ -60,10 +66,17 @@ def calcular_tiempo():
   #Calcular velocidad lineal
   v = w * r
   return v
-  
+
+#Guardo los retornos de los calculos y las funciones en variables  
 velocidad = calcular_tiempo()
 
+def imprimir_resultados():
+    #Se muestran resultados en pantalla
+    print("El numero de vueltas necesarias en la polea para cerrar la puerta completamente es:",nro_vueltas)
+    print("El numero de hombres necesarios para cerrar la puerta es:", nro_hombres)
+    print("Para cerrar la puerta en el tiempo estipulado la polea debe girar a una velocidad de:",velocidad,"cm/s")
 
-print("El numero de vueltas necesarias en la polea para cerrar la puerta completamente es:",nro_vueltas)
-print("El numero de hombres necesarios para cerrar la puerta es:", nro_hombres)
-print("Para cerrar la puerta en el tiempo estipulado la polea debe girar a una velocidad de:",velocidad,"cm/s")
+#muestro los resultados en pantalla
+imprimir_resultados()
+
+
